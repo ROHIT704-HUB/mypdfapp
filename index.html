@@ -11,14 +11,37 @@
     <h1>📘 Smart Study App</h1>
   </header>
 
-  <div class="buttons">
-    <button id="freeBtn">📖 View Free Content</button>
-    <button id="premiumBtn">🔐 View Premium Content</button>
+  <!-- LOGIN FORM -->
+  <div id="loginPage">
+    <input type="text" id="email" placeholder="Enter email" />
+    <input type="password" id="password" placeholder="Enter password" />
+    <button onclick="login()">Login</button>
   </div>
 
-  <div id="contentArea"></div>
+  <!-- MAIN CONTENT (Hidden Initially) -->
+  <div id="mainPage" style="display: none;">
+    <div class="buttons">
+      <button id="freeBtn">📖 View Free Content</button>
+      <button id="premiumBtn">🔐 View Premium Content</button>
+    </div>
+    <div id="contentArea"></div>
+  </div>
 
   <script src="script.js"></script>
+
+  <script>
+    function login() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+
+      // Simple dummy check
+      if (email === "rohit@test.com" && password === "1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("mainPage").style.display = "block";
+      } else {
+        alert("Invalid email or password!");
+      }
+    }
+  </script>
 </body>
 </html>
-
