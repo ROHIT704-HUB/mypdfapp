@@ -1,0 +1,51 @@
+{
+  "free": {
+    "Biology": [
+      {
+        "name": "Cell Structure.pdf",
+        "url": "free/biology/Cell_Structure.pdf"
+      },
+      {
+        "name": "Genetics.pdf",
+        "url": "free/biology/Genetics.pdf"
+      },
+      {
+        "name": "10) Cell Cycle and Cell Division.pdf",
+        "url": "free/biology/Cell_Cycle_and_Cell_Division.pdf"
+      }
+    ],
+    "Chemistry": [
+      {
+        "name": "Organic Chemistry.pdf",
+        "url": "free/chemistry/Organic_Chemistry.pdf"
+      }
+    ],
+    "Zoology": [
+      {
+        "name": "Animal Physiology.pdf",
+        "url": "free/zoology/Animal_Physiology.pdf"
+      }
+    ]
+  },
+  "premium": {
+    "Biology": [
+      {
+        "name": "Advanced Genetics.pdf",
+        "url": "premium/biology/Advanced_Genetics.pdf"
+      }
+    ],
+    "Chemistry": [
+      {
+        "name": "Physical Chemistry.pdf",
+        "url": "premium/chemistry/Physical_Chemistry.pdf"
+      }
+    ],
+    "Zoology": [
+      {
+        "name": "Evolutionary Biology.pdf",
+        "url": "premium/zoology/Evolutionary_Biology.pdf"
+      }
+    ]
+  }
+}
+
