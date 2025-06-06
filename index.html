@@ -3,49 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Login & Register App</title>
+  <title>PDF Viewer App</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div id="login-section">
+    <form id="login-form">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" required />
+      <input type="password" id="login-password" placeholder="Password" required />
+      <button type="button" id="login-btn">Login</button>
+      <p id="login-error" class="error"></p>
+      <p>
+        No account? <a href="#" id="show-register">Register here</a>
+      </p>
+    </form>
 
-<div class="container" id="auth-container">
-  <!-- Login Form -->
-  <div id="login-form">
-    <h2>Login</h2>
-    <label for="login-email">Email</label>
-    <input type="email" id="login-email" placeholder="Enter email" required />
-    <label for="login-password">Password</label>
-    <input type="password" id="login-password" placeholder="Enter password" required />
-    <button id="login-btn">Login</button>
-    <div class="toggle-link" id="show-register">Don't have an account? Register</div>
-    <div class="error" id="login-error"></div>
+    <form id="register-form" style="display:none;">
+      <h2>Register</h2>
+      <input type="email" id="register-email" placeholder="Email" required />
+      <input type="password" id="register-password" placeholder="Password" required />
+      <button type="button" id="register-btn">Register</button>
+      <p id="register-error" class="error"></p>
+      <p>
+        Have an account? <a href="#" id="show-login">Login here</a>
+      </p>
+    </form>
   </div>
 
-  <!-- Register Form -->
-  <div id="register-form" style="display:none;">
-    <h2>Register</h2>
-    <label for="register-email">Email</label>
-    <input type="email" id="register-email" placeholder="Enter email" required />
-    <label for="register-password">Password</label>
-    <input type="password" id="register-password" placeholder="Enter password" required />
-    <button id="register-btn">Register</button>
-    <div class="toggle-link" id="show-login">Already have an account? Login</div>
-    <div class="error" id="register-error"></div>
-  </div>
-
-  <!-- Content Section (Shown after login) -->
   <div id="content-section" style="display:none;">
-    <h2>Welcome!</h2>
-    <div class="content-buttons">
-      <button id="free-content-btn">View Free Content</button>
-      <button id="premium-content-btn">Premium Content (Pay ₹100)</button>
-    </div>
-    <div id="contentArea" style="margin-top: 20px;"></div>
-    <div class="message" id="payment-message"></div>
-    <button id="logout-btn" style="margin-top:20px; background:#d9534f;">Logout</button>
+    <h2>Welcome to PDF Viewer App</h2>
+    <button id="free-content-btn">Free Content</button>
+    <button id="premium-content-btn">Premium Content (₹100)</button>
+    <button id="logout-btn">Logout</button>
+    <p id="payment-message"></p>
+    <div id="contentArea" style="margin-top:20px;"></div>
   </div>
-</div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
